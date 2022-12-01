@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="/destination.css">
+  <title>Frontend Mentor | Space tourism website</title>
+  <style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    width: 100%;
+    font-family: 'Barlow', sans-serif;
+  }
+  .moon-container {
+    width: 100%;
+    height: 900px;
+    background-image: url(assets/destination/background-destination-desktop.jpg);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+  }
+  nav {
+    position: absolute;
+    width: 95%;
+    height: 96px;
+    top: 40px;
+    left: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #logo1 {
+    position: absolute;
+    left: 20px;
+  }
+  nav .line {
+    background-color: transparent;
+    height: 0.5px;
+    width: 600px;
+    background-color: grey;
+    margin-left: 100px;
+  }
+  .primary-navigation {
+    display: flex;
+    width: 55%;
+    height: 100%;
+    gap: 20px;
+    justify-content: flex-end;
+    background: linear-gradient(60deg,grey,transparent,rgb(111, 108, 108), rgb(111, 108, 108));
+    align-items: center;
+    margin-left: 100px;
+  }
+  .primary-navigation li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .primary-navigation li {
+    font-size: 20px;
+    list-style: none;
+    text-transform: uppercase;
+  }
+  .primary-navigation li a:hover {
+    color: #000;
+    font-weight: 600;
+  }
+  #bars {
+    background-color: transparent;
+    display: none;
+  }
+  #bars svg {
+    color: #000;
+    font-size: 36px;
+  }
+  #pick-your-destination {
+    width: 382px;
+    height: 34px;
+    position: absolute;
+    top: 212px;
+    left: 166.5px;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  #pick-your-destination span {
+    color: grey;
+    font-size: 28px;
+  }
+  .moon {
+    position: absolute;
+    width: 445px;
+    height: 445px;
+    border-radius: 50%;
+    top: 345px;
+    left: 231px;
+  }
+  .info-container {
+    width: 445px;
+    height: 472px;
+    position: absolute;
+    top: 310px;
+    left: 832px;
+  }
+  .menu-gariguud {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    padding-right: 130px;
+  }
+  .menu-gariguud #garig {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+  }
+  .active {
+    border-bottom: 2px solid #fff !important;
+  }
+  /* .garig-moon > .active {
+    display: block;
+    border-bottom: 2px solid #fff !important;
+  } */
+  .menu-gariguud #garig:hover {
+    font-size: 24px;
+  }
+  #moon {
+    font-size: 100px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-left: 10px;
+    font-weight: 600;
+  }
+  #text {
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .info-line {
+    width: 400px;
+    height: 1px;
+    background-color: grey;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  #avg-distance, #travel-time {
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  #travel-time {
+    margin-left: 50px;
+  }
+  </style>
+</head>
+<body>
+  <div class="moon-container">
+    <nav>
+      <span id="logo1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg></span>
+      <span class="line"></span>
+      <ul class="primary-navigation">
+        <li>
+          <a href="./index.html">00 Home</a>
+        </li>
+        <li>
+          <a href="#">01 Destination</a>
+        </li>
+        <li>
+          <a href="./crew-commander.html">02 Crew</a>
+        </li>
+        <li>
+          <a href="./technology-capsule.html">03 Technology</a>
+        </li>
+      </ul>
+      <button id="bars"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg></button>
+    </nav>
+    <div id="pick-your-destination">
+      <p><span>01</span> Pick your destination</p>
+    </div>
+    <div class="moon">
+      <img src="./assets/destination/image-moon.png" id="moon-img" alt="Moon">
+    </div>
+    <div class="info-container">
+      <div class="menu-gariguud">
+        <button id="garig" class="garig-moon">Moon</button>
+        <button id="garig" class="garig-mars">Mars</button>
+        <button id="garig" class="garig-eupora">Eupora</button>
+        <button id="garig" class="garig-titan">Titan</button>
+      </div>
+      <p id="moon">Moon</p>
+      <p id="text">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+        regain perspective and come back refreshed. While you’re there, take in some history 
+        by visiting the Luna 2 and Apollo 11 landing sites.
+      </p>
+      <div class="info-line"></div>
+      <span id="avg-distance">
+        <p>Avg. distance</p>
+        <p id="km">384,400 km</p>
+      </span>
+      <span id="travel-time">
+        <p>Est. travel time</p>
+        <p id="days">3 days</p>
+      </span>
+    </div>
+  </div>
+  <script src="/destination.js"></script>
+</body>
+</html>

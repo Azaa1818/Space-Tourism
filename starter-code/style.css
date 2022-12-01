@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Epilogue:ital,wght@0,500;1,500&family=Roboto+Serif:opsz,wght@8..144,100&family=Roboto:ital,wght@1,500&display=swap');
+
+/* Media Home Tablet */
+
+@media (max-width: 768px) {
+    .container {
+        background-image: url('./assets/home/background-home-tablet.jpg');
+    }
+    nav {
+        width: 729px;
+        height: 96px;
+    }
+    nav .line {
+        display: none;
+    }
+    .primary-navigation {
+        width: 500px;
+        height: 100%;
+    }
+    .primary-navigation li a span {
+        display: none;
+    }
+    #space {
+        font-size: 130px;
+    }
+    #third-text {
+        font-size: 18px;
+    }
+    .block {
+        display: block;
+    }
+    .Explore {
+        position: absolute;
+        width: 242px;
+        height: 242px;
+        top: 692px;
+        left: 263px;
+    }
+}
+
+/* Media Home Phone  */
+
+@media (max-width: 375px) {
+    .container {
+        background-image: url('./assets/home/background-home-mobile.jpg');
+    }
+    .primary-navigation {
+        display: none;
+    }
+    #bars {
+        display: flex;
+        color: white;
+        margin-right: 120px;
+    }
+    nav {
+        left: 8px;
+    }
+    #space {
+        font-size: 100px;
+    }
+    #third-text {
+        font-size: 16px;
+    }
+    .Home-text {
+        width: 327px;
+        height: 276px;
+        top: 112px;
+        left: 24px;
+    }
+    .Explore {
+        width: 150px;
+        height: 150px;
+        top: 469px;
+        left: 113px;
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

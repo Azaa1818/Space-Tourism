@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    width: 100%;
+    font-family: 'Barlow', sans-serif;
+  }
+  .container {
+    width: 100%;
+    height: 900px;
+    background-image: url(./assets/home/background-home-desktop.jpg);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+  }
+  nav {
+    position: absolute;
+    width: 95%;
+    height: 96px;
+    top: 40px;
+    left: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #bars {
+    background-color: transparent;
+    display: none;
+  }
+  #bars svg {
+    color: #000;
+    font-size: 36px;
+  }
+  #logo1 {
+    position: absolute;
+    left: 20px;
+  }
+  nav .line {
+    background-color: transparent;
+    height: 0.5px;
+    width: 600px;
+    background-color: grey;
+    margin-left: 100px;
+  }
+  .primary-navigation {
+    display: flex;
+    width: 55%;
+    height: 100%;
+    gap: 20px;
+    justify-content: center;
+    background: linear-gradient(80deg, whitesmoke, rgb(18, 18, 77) ,transparent, rgb(18, 18, 77));
+    align-items: center;
+    margin-left: 100px;
+  }
+  .primary-navigation li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .primary-navigation li a span {
+    font-weight: bold;
+  }
+  .primary-navigation li {
+    font-size: 20px;
+    list-style: none;
+    text-transform: uppercase;
+  }
+  .primary-navigation li a:hover {
+    color: #000;
+    font-weight: 600;
+  }
+  .Home-text {
+    display: block;
+    position: absolute;
+    left: 165px;
+    top: 387px;
+    width: 450px;
+    height: 382px;
+    background: transparent;
+    color: #fff;
+  }
+  #first-text {
+    font-weight:lighter;
+    font-size: 30px;
+    word-spacing: 10px;
+  }
+  #space {
+    font-size: 150px;
+    font-weight: lighter;
+    text-transform: uppercase;
+  }
+  #third-text {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .Explore {
+    position: absolute;
+    left: 1001px;
+    top: 495px;
+    width: 274px;
+    height: 274px;
+    border-radius: 50%;
+    font-size: 28px;
+    font-weight: lighter;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+  }
+  .Explore a {
+    text-decoration: none;
+    color: #000;
+  }
+</style>
+<body>
+  <div class="container">
+    <nav>
+      <span id="logo1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg></span>
+      <span class="line"></span>
+      <ul class="primary-navigation">
+        <li>
+          <a href="./index.html"><span>00</span> Home</a>
+        </li>
+        <li>
+          <a href="./destination-moon.html"><span>01</span> Destination</a>
+        </li>
+        <li>
+          <a href="./crew-commander.html"><span>02</span> Crew</a>
+        </li>
+        <li>
+          <a href="./technology-capsule.html"><span>03</span> Technology</a>
+        </li>
+      </ul>
+      <button id="bars"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg></button>
+    </nav>
+    <div class="block">
+      <div class="Home-text">
+        <p id="first-text">So, you want to travel to</p>
+        <h1 id="space">Space</h1>
+        <p id="third-text">Let’s face it, if you want to go to space, you might as well genuinely go to 
+          outer space and not hover kind of on the edge of it. Well sit back, and relax 
+          because we’ll give you a truly out of this world experience!
+        </p>
+      </div>
+      <span><button class="Explore"><a href="./destination-moon.html">Explore</a></button></span>
+    </div>
+  </div>
+</body>
+</html>

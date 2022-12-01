@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Epilogue:ital,wght@0,500;1,500&family=Roboto+Serif:opsz,wght@8..144,100&family=Roboto:ital,wght@1,500&display=swap');
+/* Media Destination Tablet */
+@media(max-width: 768px) {  
+    .moon-container {
+        background-image: url('./assets/destination/background-destination-tablet.jpg');
+    }
+    nav {
+        width: 729px;
+        height: 96px;
+    }
+    nav .line {
+        display: none;
+    }
+    .primary-navigation {
+        width: 500px;
+        height: 100%;
+    }
+    .primary-navigation li a span {
+        display: none;
+    }
+    .moon {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        top: 220px;
+        left: 180px;
+    }
+    #pick-your-destination {
+        left: 0;
+    }
+    .info-container {
+        position: absolute;
+        width: 573px;
+        height: 600px;
+        top: 750px;
+        left: 97px;
+        text-align: center;
+    }
+    .info-container .info-line {
+        margin-left: 80px;
+    }
+    .info-container #moon {
+        font-size: 80px;
+    }
+    .menu-gariguud {
+        margin-left: 110px;
+    }
+    .menu-gariguud #garig {
+        font-size: 18px;
+    }
+}
+
+/* Media Destination Phone */
+
+@media (max-width: 375px) {
+    .moon-container {
+        background-image: url('./assets/destination/background-destination-mobile.jpg');
+    }
+    .primary-navigation {
+        display: none;
+    }
+    #bars {
+        display: flex;
+        color: white;
+        margin-right: 120px;
+    }
+    nav {
+        left: 8px;
+    }
+    #pick-your-destination {
+        position: absolute;
+        width: 221px;
+        height: 19px;
+        left: 77.5px;
+        top: 88px;
+
+    }
+    .moon {
+        position: absolute;
+        width: 170px;
+        height: 170px;
+        top: 139px;
+        left: 107px;
+    }
+    .info-container {
+        position: absolute;
+        width: 327px;
+        height: 820px;
+        top: 335px;
+        left: 24px;
+        text-align: center;
+    }
+    .info-container .info-line {
+        margin-left: 60px;
+    }
+    .info-container #moon {
+        font-size: 56px;
+    }
+    .menu-gariguud {
+        margin-left: 110px;
+    }
+    .menu-gariguud #garig {
+        font-size: 16px;
+    }
+}
